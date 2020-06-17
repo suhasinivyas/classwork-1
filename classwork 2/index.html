@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+    <title>Working with JavaScript DOM..!!</title>
+  </head>
+   <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Moviemania 1</h1>
+          <p>Movies for everyone</p>
+          <form id="search-movies">
+			<input id="search" type="text" onkeyup="searching()" placeholder="Search movies..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="movie-list">
+	    	<h2 class="title" onclick="alert('h2')">Movies to watch</h2>
+	    	<ul id="theoption">
+	    		<li id="list">
+	    			<span class="name">Fight Club</span>
+	    			<span class="delete" onclick="myFunction()">delete</span>
+	    		</li>
+	    		<li id="list">
+	    			<span class="name">Shawshank Redemption</span>
+	    			<span class="delete" onclick="myFunction()">delete</span>
+	    		</li>
+	    		<li id="list">
+	    			<span class="name">Secret life of Walter Mitty</span>
+	    			<span class="delete" onclick="myFunction()">delete</span>
+	    		</li>
+	    		<li id="list">
+	    			<span class="name">Dark Knight</span>
+	    			<span class="delete" onclick="myFunction()">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-movie">
+        <input type="checkbox" id="hide" onclick="myFunctionone()"/>
+				<label for="hide"> Hide the List </label>
+				<input type="text" id="newmovie" placeholder="Add a movie..." />
+	    	<button id="add-button">Add</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab...</p>
+          <p>This is an application for creating a person's movies list</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab...</p>
+          <p>Contact to know more</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./changes.js"></script>
+</html>
